@@ -1,4 +1,5 @@
 
-public class GameWorld {
-
+public class GameWorld 
+{
+	static Player player;
 }
