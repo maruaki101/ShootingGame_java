@@ -8,6 +8,13 @@ public class Player extends Character implements KeyListener
 		super(x,y,vx,vy);
 	}
 	
+	public void draw(MyFrame f) 
+	{
+		f.setColor(100, 200, 150);
+		f.fillRect(x, y+20, 30, 10);
+		f.setColor(50, 150, 1200);
+		f.fillRect(x+10, y, 10, 30);
+	}
 	public void move() 
 	{
 		super.move();
