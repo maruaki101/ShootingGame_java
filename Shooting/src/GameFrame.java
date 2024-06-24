@@ -94,13 +94,16 @@ public class GameFrame extends MyFrame
 				{
 					System.out.println("あたり");
 					hits++;
-					GameWorld.enemies.remove(j); 
+					e.life--;
 				}
+				if(e.life<=0) 
+           		{
+				GameWorld.enemies.remove(j);
+           		}
 				else 
 				{
 					j++;
 				}
-				
 			}
 			if(hits>0) 
 			{
