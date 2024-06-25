@@ -5,6 +5,7 @@ public class EnemyBase extends Enemy
 	{
 		super(x,y,vx,vy);
 		life = 20;
+		score = 10;
 	}
 	public void move() 
 	{
