@@ -10,7 +10,7 @@ public class DropEnemy extends Enemy
 	public void move() 
 	{
 		super.move();
-		vy=vy+0.1;
+		vy=vy+GameWorld.stage;
 	}
 	public void draw(MyFrame f) 
 	{
