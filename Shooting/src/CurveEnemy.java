@@ -12,11 +12,11 @@ public class CurveEnemy extends Enemy
 		super.move();
 		if(x>GameWorld.player.x)
 		{
-			x+=GameWorld.stage;
+			x-=GameWorld.stage;
 		}
 		if(x<GameWorld.player.x)
 		{
-			x-=GameWorld.stage;
+			x+=GameWorld.stage;
 		}
 	}
 	public void draw(MyFrame f) 
